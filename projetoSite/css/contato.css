@@ -1,0 +1,21 @@
+.contato{
+    display: flex;
+    min-width: 290px;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 17px;
+}
+main{
+    height: 80vh;
+}
+
+.row{
+    justify-content: center;
+    overflow: hidden;
+}
+#btn-Enviar{
+    margin: 15px;
+}
+#assunto{
+    resize: none;
+}

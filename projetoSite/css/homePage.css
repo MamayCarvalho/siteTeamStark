@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("/componentes/font/Roboto-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto-Regular";
+}
+#btn-top{
+    display: none;
+}
+
+/*fim escopo global*/
+
+header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1001;
+    font-family: "Roboto-Regular";
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+  /*Fim do header*/
+  /*inicio do main*/
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+    background-image: url('/componentes/img/all/bg/imagem-fundo-branco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  [data-bs-theme="light"] body {
+    background-image: url('/componentes/img/all/bg/imagem-fundo-branco.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  [data-bs-theme="dark"] body {
+    background-image: url('/componentes/img/all/bg/imagem-fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  main{
+    display: block;
+    position: absolute;
+    top:10vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    font-family: "Roboto-Regular";
+    font-weight: 700;
+    letter-spacing: 1px;
+   
+  }
+
+  /*Inicio do footer*/
+  footer{
+    display: block;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 0;
+    font-family: "Roboto-Regular";
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+  }
+  .c-item{
+    height: 60vh;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 5px 0px #000000;
+    transition: opacity .3s ease;
+}
+[data-bs-theme="dark"] .carousel-indicators [data-bs-target] { 
+        background-color: rgb(0, 0, 0);
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        box-shadow: inset 0px 0px 5px 0px #ffffff;
+
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-shadow: inset 0px 0px 5px 5px #000;
+    border-radius: 100%;
+}
+.carrossel{
+    left: 0;
+    width: 100vw;
+}

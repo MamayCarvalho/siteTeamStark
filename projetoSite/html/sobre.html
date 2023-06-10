@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bst5/bootstrap-reboot.css">
+  <link rel="stylesheet" href="/css/header-Footer.css">
+  <title>Stark Team</title>
+</head>
+
+<body class="d-flex flex-column">
+  <header class="flex-grow-1 flex-shrink-0">
+    <!-- Navbar Inicio-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logoNav" src="/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/equipe.html">Equipe</a>
+            </li>
+            <!-- dropdown menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artefatos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Canvas</a></li>
+                <li><a class="dropdown-item" href="#">Documentação</a></li>
+                <li><a class="dropdown-item" href="/html/picth.html">Pitch</a></li>
+                <li><a class="dropdown-item" href="#">Protótipo</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <!-- Butao do modal download -->
+                  <button type="button" class="dropdown-item btn btn-link" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Download
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <!-- dropdown menu fim-->
+          </ul>
+          <!-- Navbar fim-->
+          <!-- Barra de pesquisa-->
+          <form class="d-flex">
+            <input
+              class="form-control me-2 d-inline-flex focus-ring focus-ring-dark py-1 px-2 text-decoration-none border rounded-2"
+              type="search" placeholder="Search" aria-label="Search">
+            <button type="submit" class="btn btn-dark btn-outline-light" id="btnSearch">Search</button>
+          </form>
+          <!-- Barra de pesquisa fim-->
+          <!-- butao do tema-->
+          <div class="btnTemaC form-check form-switch" id="btnTema">
+            <input type="checkbox" id="btnSwitch">
+            <label for="btnSwitch" class="toggleSwitch"></label>
+          </div>
+          <!-- butao do tema fim-->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Fim-->
+  <!-- Modal inicio -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Itens Modal inicio -->
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Documentação</a> <img
+              src="/componentes/img/all/assets/download-loop.svg" alt="Download Documentação"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Canvas</a> <img src="/componentes/img/all/assets/download-loop.svg"
+              alt="Download Canvas"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Protótipo</a> <img
+              src="/componentes/img/all/assets/download-loop.svg" alt="Download Protótipo"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Pitch</a> <img src="/componentes/img/all/assets/download-loop.svg"
+              alt="Download Pitch"></div>
+        </div>
+        <!-- Itens Modal fim -->
+        <!-- butao close Modal inicio -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <!-- butao close Modal fim -->
+      </div>
+    </div>
+  </div>
+  <main class="flex-grow-1 flex-shrink-1">
+    <div class="row container-fluid justify-content-around mt-4">
+      <div class="tituloElogo col-sm-4 container-md">
+        <h1 class="text-md-start">
+          O que é o Stark Team?
+        </h1>
+        <img src="/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" height="350">
+      </div>
+      <div class="quemSomos col-xl-8 container-sm mt-5 ps-5">
+        <p class="container text-md-start" width="500"  >O Team Stark é o nome da equipe responsável pelo desenvolvimento do Sistema de Vagas StarkPark no âmbito do Projeto Integrador do Saga SENAI. É um grupo de estudantes e profissionais que se uniram para enfrentar o desafio de encontrar uma abordagem inovadora e econômica para melhorar a gestão de estacionamentos, inicialmente focado em um Shopping Center específico.</p>
+        <p class="container text-md-start">O Team Stark é o nome da equipe responsável pelo desenvolvimento do Sistema de Vagas StarkPark no âmbito do Projeto Integrador do Saga SENAI. É um grupo de estudantes e profissionais que se uniram para enfrentar o desafio de encontrar uma abordagem inovadora e econômica para melhorar a gestão de estacionamentos, inicialmente focado em um Shopping Center específico.</p>
+        <p class="container text-md-start">O Team Stark não se limita apenas ao desenvolvimento do Sistema de Vagas StarkPark, mas também tem como objetivo compartilhar essa solução com outros estabelecimentos que enfrentam desafios semelhantes na gestão de estacionamentos. Eles têm a visão de oferecer uma tecnologia que simplifique a busca por vagas, economize tempo e reduza o estresse dos clientes em diferentes contextos.</p>
+        <p class="container text-md-start">Em suma, o Team Stark, composto por Mayara, Marcos, Bruno e Iago, é uma equipe engajada e dedicada que busca aplicar seus conhecimentos e tecnologia para melhorar a gestão de estacionamentos, proporcionando uma experiência mais eficiente e conveniente para os usuários.</p>
+      </div>
+    </div>
+  
+
+
+
+
+    <!--Footer-->
+        <button class="btn btn-outline-secondary" id="btn-top" onclick="scrollToTop()"><img
+            src="/componentes/img/all/assets/arrow-up-bold.svg" alt=""></button>
+            <footer class="row container-fluid d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-body-tertiary" data-bs-toggle="light" >
+              <div class="col-md-2 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Stark Team</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="me-3"><a class="text-body-secondary" href="/html/sobre.html">Quem somos?</a></li>
+                <li class="me-3"><a class="text-body-secondary" href="/html/equipe.html">Equipe</a></li>
+                <li class="me-3"><a class="text-body-secondary" href="/html/contato.html">Contato</a></li>
+              </ul>
+            </footer>
+  </main>
+   <!-- Modal inicio -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Itens Modal inicio -->
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Documentação</a> <img
+              src="/componentes/img/all/assets/download-loop.svg" alt="Download Documentação"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Canvas</a> <img src="/componentes/img/all/assets/download-loop.svg"
+              alt="Download Canvas"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Protótipo</a> <img
+              src="/componentes/img/all/assets/download-loop.svg" alt="Download Protótipo"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Pitch</a> <img src="/componentes/img/all/assets/download-loop.svg"
+              alt="Download Pitch"></div>
+        </div>
+        <!-- Itens Modal fim -->
+        <!-- butao close Modal inicio -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <!-- butao close Modal fim -->
+      </div>
+    </div>
+  </div>
+  <!-- Modal Fim -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="/js/themeSwitch.js"></script>
+    <script src="/js/btn-top.js"></script>
+    <script src="/js/btnDownload-modal.js"></script>
+</body>
+
+</html>
