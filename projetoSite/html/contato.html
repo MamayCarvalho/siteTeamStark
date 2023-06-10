@@ -7,64 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bst5/bootstrap-reboot.css">
-    <link rel="stylesheet" href="/css/header-Footer.css">
-    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="/projetoSite/css/bst5/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/projetoSite/css/contato.css">
     <title>Stark Team</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img id="logoNav" src="/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" height="75">
+<body class="d-flex flex-column">
+    <!-- Header Inicio-->
+    <header class="">
+      <!-- Navbar Inicio-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logoNav" src="/projetoSite/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto"
+              height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/projetoSite/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projetoSite/html/sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projetoSite/html/equipe.html">Equipe</a>
+              </li>
+              <!-- dropdown menu-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Artefatos
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/html/sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/html/equipe.html">Equipe</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Artefatos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Canvas</a></li>
-                                <li><a class="dropdown-item" href="#">Documentação</a></li>
-                                <li><a class="dropdown-item" href="#">Pitch</a></li>
-                                <li><a class="dropdown-item" href="#">Protótipo</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Download</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button type="submit" class="btn btn-outline" id="btnSearch">Search</button>
-                    </form>
-                </div>
-                <div class="form-check form-switch" id="btnTema">
-                    <input class="form-check-input" type="checkbox" role="switch" id="btnSwitch">
-                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Canvas</a></li>
+                  <li><a class="dropdown-item" href="#">Documentação</a></li>
+                  <li><a class="dropdown-item" href="/projetoSite/html/picth.html">Pitch</a></li>
+                  <li><a class="dropdown-item" href="#">Protótipo</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <!-- Butao do modal download -->
+                    <button type="button" class="dropdown-item btn btn-link" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Download
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <!-- dropdown menu fim-->
+            </ul>
+            <!-- Navbar fim-->
+            <!-- Barra de pesquisa-->
+            <form class="d-flex">
+              <input
+                class="form-control me-2 d-inline-flex focus-ring focus-ring-dark py-1 px-2 text-decoration-none border rounded-2"
+                type="search" placeholder="Search" aria-label="Search">
+              <button type="submit" class="btn btn-dark btn-outline-light" id="btnSearch">Search</button>
+            </form>
+            <!-- Barra de pesquisa fim-->
+            <!-- butao do tema-->
+            <div class="btnTemaC form-check form-switch" id="btnTema">
+              <input type="checkbox" id="btnSwitch">
+              <label for="btnSwitch" class="toggleSwitch"></label>
             </div>
-        </nav>
+            <!-- butao do tema fim-->
+          </div>
+        </div>
+      </nav>
     </header>
+    <!-- Header Fim-->
+    <!-- Modal inicio -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Itens Modal inicio -->
+            <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+                class="text-decoration-none" href="#">Documentação</a> <img
+                src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Documentação"></div>
+            <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+                class="text-decoration-none" href="#">Canvas</a> <img
+                src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Canvas"></div>
+            <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+                class="text-decoration-none" href="#">Protótipo</a> <img
+                src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Protótipo"></div>
+            <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+                class="text-decoration-none" href="#">Pitch</a> <img
+                src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Pitch"></div>
+          </div>
+          <!-- Itens Modal fim -->
+          <!-- butao close Modal inicio -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <!-- butao close Modal fim -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal Fim -->
     <main class="container-fluid d-flex flex-column justify-content-between sticky-footer" style="min-height: 70vh">        
         <section class="contato container-sm bg-body-secondary">
                     <div class="row g-3">
@@ -99,34 +149,25 @@
                 </div>
         </section>
     </main>
-    <footer class="footer" data-bs-toggle="light">
-        <div class="footercontainer">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <div class="footerLogoCopy d-flex align-items-center justify-content-start">
-                <img class="footerItem" id="logoFooter" src="/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="Logo Stark Team">
-                <p class="footerItem text-decoration-none m-0 ms-2">Stark Team 2023.<br> Todos os direitos reservados &copy;</p>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex justify-content-end">
-              <div>
-                <a class="footerItem text-decoration-none me-3" href="/html/sobre.html">O que é Stark Team?</a>
-                <a class="footerItem text-decoration-none me-3" href="/html/equipe.html">Equipe</a>
-                <a class="footerItem text-decoration-none me-3" href="/html/contato.html">Contato</a>
-              </div>
-            </div>
+    <footer >
+        <div class="d-flex flex-wrap justify-content-between align-items-center border-top bg-body-tertiary py-3"
+        data-bs-toggle="light">
+          <div class="col-md-2 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary ps-2">© 2023 Stark Team</span>
           </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/sobre.html">Quem somos</a></li>
+            <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/equipe.html">Equipe</a></li>
+            <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/contato.html">Contato</a></li>
+          </ul>
         </div>
       </footer>
-    <scripts>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
-        <script src="/js/themeSwitch.js"></script>
-        <script src="/js/homePageScript.js"></script>
-        <script src="/js/contato.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    </scripts>
-</body>
-
-</html>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+      <script src="/projetoSite/js/themeSwitch.js"></script>
+      <script src="/projetoSite/js/btn-top.js"></script>
+      <script src="/projetoSite/js/btnDownload-modal.js"></script>
+    </body>
+    
+    </html>
