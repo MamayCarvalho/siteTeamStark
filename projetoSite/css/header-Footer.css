@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("/componentes/font/Roboto-Regular.ttf");
+  src: url("/projetoSite/componentes/font/Roboto-Regular.ttf");
 }
 
 * {
