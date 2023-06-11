@@ -1,0 +1,46 @@
+@import "/projetoSite/componentes/scss/_functions.scss";
+@import "/projetoSite/componentes/scss/_variables.scss";
+@import "/projetoSite/componentes/scss/_variables-dark.scss";
+@import "/projetoSite/componentes/scss/_maps.scss";
+@import "/projetoSite/componentes/scss/_mixins.scss";
+@import "/projetoSite/componentes/scss/_utilities.scss";
+/*Configuraçoes*/
+
+
+
+@import "/projetoSite/componentes/scss/_reboot.scss";
+@import "/projetoSite/componentes/scss/_root.scss";
+@import "/projetoSite/componentes/scss/_type.scss";
+@import "/projetoSite/componentes/scss/_images.scss";
+@import "/projetoSite/componentes/scss/_grid.scss";
+@import "/projetoSite/componentes/scss/_tables.scss";
+@import "/projetoSite/componentes/scss/_forms.scss";
+@import "/projetoSite/componentes/scss/_buttons.scss";
+@import "/projetoSite/componentes/scss/_transitions.scss";
+@import "/projetoSite/componentes/scss/_button-group.scss";
+@import "/projetoSite/componentes/scss/_nav.scss";
+@import "/projetoSite/componentes/scss/_navbar.scss";
+@import "/projetoSite/componentes/scss/_accordion.scss";
+@import "/projetoSite/componentes/scss/_breadcrumb.scss";
+@import "/projetoSite/componentes/scss/_pagination.scss";
+@import "/projetoSite/componentes/scss/_badge.scss";
+@import "/projetoSite/componentes/scss/_alert.scss";
+@import "/projetoSite/componentes/scss/_progress.scss";
+@import "/projetoSite/componentes/scss/_list-group.scss";
+@import "/projetoSite/componentes/scss/_close.scss";
+@import "/projetoSite/componentes/scss/_tooltip.scss";
+@import "/projetoSite/componentes/scss/_popover.scss";
+@import "/projetoSite/componentes/scss/_carousel.scss";
+@import "/projetoSite/componentes/scss/_spinners.scss";
+@import "/projetoSite/componentes/scss/_offcanvas.scss";
+@import "/projetoSite/componentes/scss/_placeholders.scss";
+@import "/projetoSite/componentes/scss/_containers.scss";
+@import "/projetoSite/componentes/scss/_card.scss";
+@import "/projetoSite/componentes/scss/_dropdown.scss";
+@import "/projetoSite/componentes/scss/_modal.scss";
+/* Layout & components*/
+
+@import "/projetoSite/componentes/scss/_helpers.scss";
+@import "/projetoSite/componentes/scss/helpers/_position.scss";
+/*helpers*/
+@import "/projetoSite/componentes/scss/utilities/_api.scss";
