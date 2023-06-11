@@ -59,7 +59,7 @@ header {
   background-color: #555;
 }
 
-body,html {
+body{
   position: absolute;
   left: 0;
   top: 0;
@@ -67,23 +67,16 @@ body,html {
   min-height: 100%;
   transition: background-color 0.3s ease;
   background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
   
 }
 
-[data-bs-theme="light"] body,html {
-  background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  object-fit: cover;
-}
-
-[data-bs-theme="dark"] body,html {
+[data-bs-theme="dark"] body{
   background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   object-fit: cover;
 }
 
@@ -208,7 +201,6 @@ body,html {
 }
 
 footer{
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -216,22 +208,12 @@ footer{
 /*//////////////////////////////*/
 
 
-.contato{
-    display: flex;
-    margin-top: 50px;
-    min-width: 290px;
-    width: 30vw;
-    height: 75vh;
-    border-radius: 17px;
+.form-control:invalid {
+  border-color: red;
 }
-
-.row{
-    justify-content: center;
-    overflow: hidden;
+.form-control:valid {
+  border-color: green;
 }
-#btn-Enviar{
-    margin-top: 10px;
-}
-#assunto{
-    resize: none;
+.formBox{
+  border-radius: 7px;
 }

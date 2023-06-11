@@ -58,8 +58,7 @@ header {
 #btn-top:hover {
   background-color: #555;
 }
-
-body,html {
+body{
   position: absolute;
   left: 0;
   top: 0;
@@ -67,25 +66,16 @@ body,html {
   min-height: 100%;
   transition: background-color 0.3s ease;
   background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
-  background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   
 }
 
-[data-bs-theme="light"] body,html {
-  background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  object-fit: cover;
-}
-
-[data-bs-theme="dark"] body,html {
+[data-bs-theme="dark"] body{
   background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   object-fit: cover;
 }
-
 [data-bs-theme="light"] footer {
   opacity: 1;
   background: rgb(230, 230, 230);
@@ -238,7 +228,7 @@ body,html {
   border: 3px solid #fff; 
 }
 footer{
-  position: absolute;
+
   bottom: 0;
   left: 0;
   width: 100%;
