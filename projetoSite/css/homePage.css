@@ -52,10 +52,15 @@ header {
   cursor: pointer;
   transition: 0.5s ease-in;
   opacity: 0.78;
+  z-index: 1001;
 }
 
 #btn-top:hover {
   background-color: #555;
+ 
+}
+.text-center{
+  letter-spacing: 3px;
 }
 
 body {
