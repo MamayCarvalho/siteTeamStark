@@ -65,19 +65,24 @@ body{
   top: 0;
   min-width: 100%;
   min-height: 100%;
-  transition: background-color 0.3s ease;
-  background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
   
 }
 
-[data-bs-theme="dark"] body{
-  background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
+main{
+  transition: background-color 0.3s ease;
+  background: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  object-fit: cover;
+
+}
+
+[data-bs-theme="dark"] main{
+  transition: background-color 0.3s ease;
+  background: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 [data-bs-theme="light"] footer {
@@ -215,5 +220,10 @@ footer{
   border-color: green;
 }
 .formBox{
+  min-width: 70vw !important;
+  width: 30vw !important;
   border-radius: 7px;
+}
+main .d-flex{
+  justify-content: center;
 }

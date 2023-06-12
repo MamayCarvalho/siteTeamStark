@@ -115,56 +115,62 @@
       </div>
     </div>
     <!-- Modal Fim -->
-    <main class="d-flex justify-content-center m-xl-auto  p-4">           
-  <div class="formBox d-block container bg-body-tertiary m-4 p-4 w-50 mw-50" data-bs-toggle="light" >
-    <h1>Deixe seu comentario</h1>
-    <form class="row g-2 gy-3 needs-validation" novalidate>
-      <div class="col-md-6">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="nome" required>
-        <div class="invalid-feedback">
-          Por favor, informe o nome.
+    <main class="flex-grow-1 flex-shrink-1 w-100 m-xxl-auto">           
+  <div class="contForm container-fluid  d-flex justify-content-center">
+    <div class="formBox d-block bg-body-tertiary mt-5 mb-5 p-3" data-bs-toggle="light" >
+      <h1>Deixe seu comentario</h1>
+      <form class="row g-2 gy-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" required>
+          <div class="invalid-feedback">
+            Por favor, informe o nome.
+          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <label for="sobrenome" class="form-label">Sobrenome</label>
-        <input type="text" class="form-control" id="sobrenome" required>
-        <div class="invalid-feedback">
-          Por favor, informe o sobrenome.
+        <div class="col-md-6">
+          <label for="sobrenome" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" required>
+          <div class="invalid-feedback">
+            Por favor, informe o sobrenome.
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="email" required>
-        <div class="invalid-feedback">
-          Por favor, informe um e-mail válido.
+        <div class="col-12">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">
+            Por favor, informe um e-mail válido.
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <label for="celular" class="form-label">Número de Celular</label>
-        <input type="tel" class="form-control" id="celular" required>
-        <div class="invalid-feedback">
-          Por favor, informe um número de celular válido.
+        <div class="col-12">
+          <label for="celular" class="form-label">Número de Celular</label>
+          <input type="tel" class="form-control" id="celular" required>
+          <div class="invalid-feedback">
+            Por favor, informe um número de celular válido.
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <label for="titulo" class="form-label">Título</label>
-        <input type="text" class="form-control" id="titulo" required>
-        <div class="invalid-feedback">
-          Por favor, informe o título.
+        <div class="col-12">
+          <label for="titulo" class="form-label">Título</label>
+          <input type="text" class="form-control" id="titulo" required>
+          <div class="invalid-feedback">
+            Por favor, informe o título.
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <label for="texto" class="form-label">Texto</label>
-        <textarea class="form-control" id="texto" rows="4"></textarea>
-      </div>
-      <div class="col-12 d-grid">
-        <button class="btn btn-secondary m-2" type="submit">Enviar</button>
-      </div>
-    </form>
+        <div class="col-12">
+          <label for="texto" class="form-label">Texto</label>
+          <textarea class="form-control" id="texto" rows="4"></textarea>
+        </div>
+        <div class="col-12 d-grid">
+          <button class="btn btn-secondary mt-2 mb-4" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
   </div>
 
     </main>
+    <!--botao para ir pro topo -->
+    <button class="btn btn-outline-secondary" id="btn-top" onclick="scrollToTop()"><img
+      src="/projetoSite/componentes/img/all/assets/arrow-up-bold.svg" alt=""></button>
+  <!--botao para ir pro topo fim-->
     <footer >
         <div class="d-flex flex-wrap justify-content-between align-items-center border-top bg-body-tertiary py-3"
         data-bs-toggle="light">

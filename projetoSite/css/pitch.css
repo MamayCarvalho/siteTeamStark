@@ -65,17 +65,23 @@ body{
   top: 0;
   min-width: 100%;
   min-height: 100%;
-  transition: background-color 0.3s ease;
-  background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
-  background-size: cover;
-  object-fit: cover;
-  
 }
 
-[data-bs-theme="dark"] body{
-  background-image: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
+main{
+  transition: background-color 0.3s ease;
+  background: url('/projetoSite/componentes/img/all/bg/imagem-fundo-branco.png');
+  background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
+  background-position: center;
+
+}
+
+[data-bs-theme="dark"] main{
+  transition: background-color 0.3s ease;
+  background: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 [data-bs-theme="light"] footer {
   opacity: 1;
