@@ -225,12 +225,15 @@ main{
 }
 .cardForm{
   min-width: 250px;
+  border-collapse: separate!important;
 }
 .cardForm :hover{
+  border-collapse: separate!important;
   border: 3px solid #000000; 
 }
 
 [data-bs-theme="dark"] .cardForm :hover{
+  border-collapse:separate!important;
   border: 3px solid #fff; 
 }
 footer{

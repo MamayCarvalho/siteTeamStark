@@ -257,3 +257,7 @@ footer{
   flex-direction: row;
   gap: 8px;
 }
+.nossaHistoria img{
+  width: 50vw;
+  height: auto;
+}
