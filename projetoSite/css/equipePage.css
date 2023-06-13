@@ -244,6 +244,7 @@ footer{
 .blur-text {
   color: #000000;
   text-shadow: 0px 0px 10px #FFFFFF;
+  filter: drop-shadow(0 -1mm 1mm rgb(255, 255, 255));
 }
 
 [data-bs-theme="dark"] .blur-text{
