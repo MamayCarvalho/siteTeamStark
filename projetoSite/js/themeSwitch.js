@@ -34,16 +34,5 @@ btnSwitch.addEventListener('change', function() {
   }
 });
 
-logoNav.addEventListener('click', function() {
-  if (btnSwitch.checked) {
-    document.documentElement.setAttribute('data-bs-theme', 'light');
-    logoNav.src = '/projetoSite/componentes/img/all/logo/logo-stark-preta-v1.2.png';
-    btnSwitch.checked = false;
-  } else {
-    document.documentElement.setAttribute('data-bs-theme', 'dark');
-    logoNav.src = '/projetoSite/componentes/img/all/logo/logo-stark-branco-v1.2.png';
-  }
-});
-
 // Chame a função para carregar a preferência de tema no início
 loadThemePreference();
