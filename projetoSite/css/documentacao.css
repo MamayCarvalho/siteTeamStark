@@ -73,9 +73,23 @@ main{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  text-align: center;
 }
 
+.divPrincipal{
+  padding-top: 40px;
+  padding-bottom: 50px;
+  }
+  
+  h1{
+    padding-bottom: 10px;
+  }
+
+  p{
+      text-align: left;
+      letter-spacing: 1px;
+  }
+  
 [data-bs-theme="dark"] main{
   transition: background-color 0.3s ease;
   background: url('/projetoSite/componentes/img/all/bg/imagem-fundo.png');
