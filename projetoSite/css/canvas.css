@@ -65,6 +65,7 @@ body{
   top: 0;
   min-width: 100%;
   min-height: 100%;
+
 }
 
 main{
@@ -202,30 +203,81 @@ main{
   text-shadow: 0px 0px 6px #000000;
   
 }
+/*//////////////////////////////*/
 
+.cardBox{
+  display: flex;
+  min-width: 250px;
+  height: 350px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: .6s;
+}
+.cardBox img{
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    
+}
+.cardForm{
+  min-width: 250px;
+}
+.cardForm :hover{
+  border: 3px solid #000000; 
+}
+
+[data-bs-theme="dark"] .cardForm :hover{
+  border: 3px solid #fff; 
+}
 footer{
-
   bottom: 0;
   left: 0;
   width: 100%;
 }
-/*//////////////////////////////*/
+.blur-text {
+  color: #000000;
+  text-shadow: 0px 0px 10px #FFFFFF;
+  filter: drop-shadow(0 0mm 1mm rgba(255, 255, 255, 0.281));
+}
+
+[data-bs-theme="dark"] .blur-text{
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #000000;
+  filter: drop-shadow(0 -1mm 1mm rgb(0, 0, 0));
+  
+}
+
+.nossaMissao{
+  flex-direction: row;
+  gap: 8px;
+}
+.nossaHistoria img{
+  width: 50vw;
+  height: auto;
+}
 
 .canvas {
     display: flex;
     height: 100vh;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
     padding: 75px;
   }
   
   /* Estilos para cada seção */
   section {
-    flex: 1 1 300px;
+    flex: 1 1 500px;
     min-width: 300px;
-    border-radius: 7px;
+    border-radius: 17px;
     padding: 15px;
+    margin: 10px;
     background-color:  rgb(248,249,250);
   }
   [data-bs-theme="dark"] section{
@@ -240,6 +292,8 @@ footer{
   h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    padding-left: 5px;
+    border-left: 5px solid;
   }
   
   /* Estilos para os contêineres de itens */
@@ -251,7 +305,11 @@ footer{
   section div p {
     font-size: 16px;
     font-weight: 600;
-    border-bottom: 2px solid rgb(129, 129, 129);
+    border-bottom: 3px solid rgb(129, 129, 129);
+    color: #000;
+    letter-spacing: 2px;
+  }
+  [data-bs-theme="dark"] section div p {
+   color: #ffffff;
   }
   
-  /* Estilos para as linhas separadoras */
