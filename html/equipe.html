@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/projetoSite/css/equipePage.css">
+  <link rel="stylesheet" href="/projetoSite/css/outros/importsBootstrap.css">
+  <title>Stark Team</title>
+</head>
+
+<body class="d-flex flex-column">
+  <!-- Header Inicio-->
+  <header class="">
+    <!-- Navbar Inicio-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/projetoSite/index.html">
+          <img id="logoNav" src="/projetoSite/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto"
+            height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/projetoSite/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projetoSite/html/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projetoSite/html/equipe.html">Equipe</a>
+            </li>
+            <!-- dropdown menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artefatos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/projetoSite/html/canvas.html">Canvas</a></li>
+                <li><a class="dropdown-item" href="/projetoSite/html/documentacao.html">Documentação</a></li>
+                <li><a class="dropdown-item" href="/projetoSite/html/picth.html">Pitch</a></li>
+                <li><a class="dropdown-item" href="/projetoSite/html/prototipo.html">Protótipo</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <!-- Butao do modal download -->
+                  <button type="button" class="dropdown-item btn btn-link" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Download
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <!-- dropdown menu fim-->
+          </ul>
+          <!-- Navbar fim-->
+  
+          <!-- butao do tema-->
+          <div class="btnTemaC form-check form-switch" id="btnTema">
+            <input type="checkbox" id="btnSwitch">
+            <label for="btnSwitch" class="toggleSwitch"></label>
+          </div>
+          <!-- butao do tema fim-->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Fim-->
+  <!-- Modal inicio -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Itens Modal inicio -->
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Documentação</a> <img
+              src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Documentação"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Canvas</a> <img
+              src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Canvas"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Protótipo</a> <img
+              src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Protótipo"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Pitch</a> <img
+              src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Pitch"></div>
+        </div>
+        <!-- Itens Modal fim -->
+        <!-- butao close Modal inicio -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <!-- butao close Modal fim -->
+      </div>
+    </div>
+  </div>
+  <!-- Modal Fim -->
+  <main class="flex-grow-1 flex-shrink-1 w-100 m-xxl-auto">
+      <div class="row justify-content-between">
+        <div class="title col-md-6">
+          <div class="m-4">
+            <h1 class="blur-text fw-bold fs-2 p-3">Nosso Time</h1>
+            <p class="blur-text fw-bold fs-4 p-2">
+              O Team Stark é o nome da equipe responsável pelo desenvolvimento do Sistema de Vagas StarkPark no âmbito
+              do Projeto Integrador do Saga SENAI. É um grupo de estudantes e profissionais que se uniram para enfrentar
+              o desafio de encontrar uma abordagem inovadora e econômica para melhorar a gestão de estacionamentos,
+              inicialmente focado em um Shopping Center específico.
+            </p>
+            <p class="blur-text fw-bold fs-4 p-2">
+              O Team Stark não se limita apenas ao desenvolvimento do Sistema de Vagas StarkPark, mas também tem como
+              objetivo compartilhar essa solução com outros estabelecimentos que enfrentam desafios semelhantes na
+              gestão de estacionamentos. Eles têm a visão de oferecer uma tecnologia que simplifique a busca por vagas,
+              economize tempo e reduza o estresse dos clientes em diferentes contextos.
+            </p>
+            <p class="blur-text fw-bold fs-4 p-2">
+              Em suma, o Team Stark, composto por Mayara, Marcos, Bruno e Iago, é uma equipe engajada e dedicada que
+              busca aplicar seus conhecimentos e tecnologia para melhorar a gestão de estacionamentos, proporcionando
+              uma
+              experiência mais eficiente e conveniente para os usuários.
+            </p>
+          </div>
+        </div>
+        <div class="cards col-md-5 mb-2 me-3">
+          <div class="row">
+            <div class="cardForm col-md-6 mt-3" min-width="200">
+              <div class="cardBox bg-body-tertiary container-sm align-middle" data-bs-toggle="modal"
+                data-bs-target="#mayaraModal">
+                <img src="/projetoSite/componentes/img/equipe/mayara.png" alt="Mayara" height="140px" width="140px" class="border border-0">
+                <h3 class="border border-0">Mayara Carvalho</h3>
+                <h5 class="profissao text-warning border border-0 p-2">(Desenvolvedora e Product Owner - P.O.)</h5>
+              </div>
+            </div>
+            <div class="cardForm col-md-6 mt-3">
+              <div class="cardBox bg-body-tertiary container-sm align-middle" data-bs-toggle="modal"
+                data-bs-target="#marcosModal">
+                <img src="/projetoSite/componentes/img/equipe/marcos.png" alt="Marcos" height="140px" width="140px" class="border border-0">
+                <h3 class="border border-0">Marcos Henrique</h3>
+                <h5 class="profissao text-warning border border-0">(Desenvolvedor e Arquiteto)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="cardForm col-md-6 mt-3">
+              <div class="cardBox bg-body-tertiary container-sm align-middle" data-bs-toggle="modal"
+                data-bs-target="#brunoModal">
+                <img src="/projetoSite/componentes/img/equipe/bruno.png" alt="Bruno" height="140px" width="140px" class="border border-0">
+                <h3 class="border border-0">Bruno Freitas</h3>
+                <h5 class="profissao text-warning border border-0">(Desenvolvedor Front-End)</h5>
+              </div>
+            </div>
+            <div class="cardForm col-md-6 mt-3 mb-4">
+              <div class="cardBox bg-body-tertiary container-sm align-middle" data-bs-toggle="modal"
+                data-bs-target="#iagoModal">
+                <img src="/projetoSite/componentes/img/equipe/iago.png" alt="Iago" height="140px" width="140px" class="border border-0">
+                <h3 class="border border-0">Iago Alves</h3>
+                <h5 class="profissao text-warning border border-0">(Desenvolvedor Front-End e Design)</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pop-up Modals -->
+    <div class="modal fade" id="mayaraModal" tabindex="-1" role="dialog" aria-labelledby="mayaraModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mayaraModalLabel">Detalhes de Mayara Carvalho</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold fs-5 p-2">Mayara é uma desenvolvedora que também desempenha o papel de Product Owner. Ela trabalha no
+              desenvolvimento de código e é responsável por definir e priorizar as funcionalidades do produto,
+              alinhando-as às necessidades dos usuários e aos objetivos do negócio.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="marcosModal" tabindex="-1" role="dialog" aria-labelledby="marcosModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="marcosModalLabel">Detalhes de Marcos Henrique</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold fs-5 p-2">Marcos é um desenvolvedor experiente que atua como Arquiteto do Projeto. Ele é responsável por trabalhar
+              na implementação de recursos e funcionalidades do sistema, desde o banco de dados até a interface de
+              usuário, garantindo uma experiência completa para os usuários finais.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="brunoModal" tabindex="-1" role="dialog" aria-labelledby="brunoModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="brunoModalLabel">Detalhes de Bruno Freitas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold fs-5 p-2">Bruno é especializado em tecnologias como HTML, CSS e JavaScript, e trabalha na implementação da
+              interface de usuário, garantindo uma experiência visualmente atraente e intuitiva.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="iagoModal" tabindex="-1" role="dialog" aria-labelledby="iagoModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="iagoModalLabel">Detalhes de Iago Alves</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold fs-5 p-2">Iago é um desenvolvedor com habilidades em Front-End e design de interfaces. Ele trabalha na criação de
+              interfaces atraentes e funcionais, focando na experiência do usuário.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--conteiner carrossel fim -->
+    <!--botao para ir pro topo -->
+    <button class="btn btn-outline-secondary" id="btn-top" onclick="scrollToTop()"><img
+        src="/projetoSite/componentes/img/all/assets/arrow-up-bold.svg" alt=""></button>
+    <!--botao para ir pro topo fim-->
+
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-body-tertiary py-3"
+  data-bs-toggle="light">
+  <div class="col-md-2 d-flex align-items-center">
+    <span class="mb-3 mb-md-0 text-body-secondary ps-2">© 2023 Stark Team</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/sobre.html">Quem somos</a></li>
+    <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/equipe.html">Equipe</a></li>
+    <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/contato.html">Contato</a></li>
+  </ul>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="/projetoSite/js/themeSwitch.js"></script>
+  <script src="/projetoSite/js/btn-top.js"></script>
+  <script src="/projetoSite/js/btnDownload-modal.js"></script>
+</body>
+
+</html>

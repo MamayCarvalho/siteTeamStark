@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/projetoSite/css/homePage.css">
+  <link rel="stylesheet" href="/projetoSite/css/outros/importsBootstrap.css">
+  <title>Stark Team</title>
+</head>
+
+<body class="d-flex flex-column">
+  <!-- Header Inicio-->
+  <header class="">
+    <!-- Navbar Inicio-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/projetoSite/index.html">
+          <img id="logoNav" src="/projetoSite/componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="projetoSite/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projetoSite/html/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projetoSite/html/equipe.html">Equipe</a>
+            </li>
+            <!-- dropdown menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artefatos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/projetoSite/html/canvas.html">Canvas</a></li>
+                <li><a class="dropdown-item" href="/projetoSite/html/documentacao.html">Documentação</a></li>
+                <li><a class="dropdown-item" href="/projetoSite/html/picth.html">Pitch</a></li>
+                <li><a class="dropdown-item" href="/projetoSite/html/prototipo.html">Protótipo</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <!-- Butao do modal download -->
+                  <button type="button" class="dropdown-item btn btn-link" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Download
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <!-- dropdown menu fim-->
+          </ul>
+          <!-- Navbar fim-->
+
+          <!-- butao do tema-->
+          <div class="btnTemaC form-check form-switch" id="btnTema">
+            <input type="checkbox" id="btnSwitch">
+            <label for="btnSwitch" class="toggleSwitch"></label>
+          </div>
+          <!-- butao do tema fim-->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Fim-->
+  <!-- Modal inicio -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Itens Modal inicio -->
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Documentação</a> <img
+              src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Documentação"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Canvas</a> <img src="/projetoSite/componentes/img/all/assets/download-loop.svg"
+              alt="Download Canvas"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Protótipo</a> <img
+              src="/projetoSite/componentes/img/all/assets/download-loop.svg" alt="Download Protótipo"></div>
+          <div class="itensDownload dropdown-item  d-flex m-1 justify-content-between bg-body-tertiary"><a
+              class="text-decoration-none" href="#">Pitch</a> <img src="/projetoSite/componentes/img/all/assets/download-loop.svg"
+              alt="Download Pitch"></div>
+        </div>
+        <!-- Itens Modal fim -->
+        <!-- butao close Modal inicio -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <!-- butao close Modal fim -->
+      </div>
+    </div>
+  </div>
+  <!-- Modal Fim -->
+  <main class="flex-grow-1 flex-shrink-1 m-xxl-auto">
+     <!-- introduçao do main stark team inicio-->
+    <div class="text-center justify-content-md-center mb-xxl-5 mt-4" style="padding: 0;">
+      <h1 class="blur-text fw-bold fs-1">StarkPark: Estacionamento fácil
+        na palma da sua mão!</h1>
+      <p class="blur-text container-sm fw-bold fs-4 lh-sm ">Encontre vagas de estacionamento com facilidade com o StarkPark.
+        Nosso aplicativo, em conjunto com nosso sensor sinalizador de vaga, simplifica a busca por
+        estacionamento. Localize vagas disponíveis em tempo real, navegue até elas e reserve antecipadamente.
+        Economize tempo e reduza o estresse ao estacionar. Experimente agora!</p>
+    </div>
+    <!-- introduçao do main stark team fim -->
+    <!--conteiner carrossel inicio -->
+    <section class="carrossel container-fluid mt-4" style="padding: 0; margin: 0;">
+      <!-- ajuste carrossel intervalo entre as paginas e + -->
+      <div id="carrosselIntro" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="2000"
+        data-bs-touch="true">
+        <div class="carousel-indicators mt-4" style="margin-bottom: 75px;">
+          <!--botoes inferiores do carrossel inicio -->
+          <button type="button" data-bs-target="#carrosselIntro" data-bs-slide-to="0" class="btnCarrossel active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrosselIntro" data-bs-slide-to="1" class="btnCarrossel"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrosselIntro" data-bs-slide-to="2" class="btnCarrossel"
+            aria-label="Slide 3"></button>
+          <!--botoes inferiores do carrossel fim -->
+        </div>
+        <!--conteiner de imagens do carrossel inicio -->
+        <div class="carousel-inner mt-4">
+          <div class="carousel-item active c-item">
+            <img src="/projetoSite/componentes/img/home/parking-1.jpg" alt="slide1" class="d-block w-100 c-img">
+            <div class="carousel-caption bottom-2   d-md-block" style="margin-bottom: 105px;">
+              <h5 class="display-4 fw-bolder text-capitalize text-white">Estacione sem estresse!</h5>
+              <p class="mt-5 fs-4  text-white">Encontre vagas, navegue e reserve com facilidade. O StarkPark simplifica o estacionamento, economizando tempo e reduzindo o estresse.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item  c-item">
+            <img src="/projetoSite/componentes/img/home/parking-undergroud-2.jpg" alt="slide2" class="d-block w-100 c-img">
+            <div class="carousel-caption bottom-2   d-md-block" style="margin-bottom: 105px;">
+              <h5 class="display-4 fw-bolder text-capitalize text-white">Encontre vagas instantaneamente!</h5>
+              <p class="mt-5 fs-4 text-white">Com o StarkPark, localizar vagas disponíveis é rápido e fácil. Navegue até elas e experimente um estacionamento sem complicações.</p>
+            </div>
+          </div>
+          <div class="carousel-item  c-item">
+            <div class="carousel-caption bottom-2   d-md-block" style="margin-bottom: 105px;">
+              <h5 class="display-4 fw-bolder text-capitalize  text-body-emphasis">Reserve sua vaga, economize tempo!</h5>
+              <p class="mt-5 fs-4  text-body-emphasis">Com o StarkPark, reserve antecipadamente e aproveite um estacionamento conveniente. Ganhe tempo ao estacionar com simplicidade.
+              </p>
+            </div>
+          </div>
+          <!--conteiner de imagens do carrossel fim -->
+          <!--botao anterior do carrossel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrosselIntro" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <!--botao proximo do carrossel  -->
+          <button class="carousel-control-next" type="button" data-bs-target="#carrosselIntro" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+     <!--conteiner carrossel fim -->
+     <!--botao para ir pro topo -->
+    <button class="btn btn-outline-secondary" id="btn-top" onclick="scrollToTop()"><img
+        src="/projetoSite/componentes/img/all/assets/arrow-up-bold.svg" alt=""></button>
+      <!--botao para ir pro topo fim-->
+ 
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-body-tertiary py-3"
+  data-bs-toggle="light">
+  <div class="col-md-2 d-flex align-items-center">
+    <span class="mb-3 mb-md-0 text-body-secondary ps-2">© 2023 Stark Team</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/sobre.html">Quem somos</a></li>
+    <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/equipe.html">Equipe</a></li>
+    <li class="me-3"><a class="text-body-secondary" href="/projetoSite/html/contato.html">Contato</a></li>
+  </ul>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="js/themeSwitch.js"></script>
+  <script src="js/btn-top.js"></script>
+  <script src="js/btnDownload-modal.js"></script>
+</body>
+
+</html>
