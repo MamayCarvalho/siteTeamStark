@@ -253,15 +253,6 @@ footer{
   
 }
 
-.nossaMissao{
-  flex-direction: row;
-  gap: 8px;
-}
-.nossaHistoria img{
-  width: 50vw;
-  height: auto;
-}
-
 .canvas {
     display: flex;
     height: 100vh;
