@@ -1,49 +1,49 @@
-@import "componentes/scss/_functions.scss";
-@import "componentes/scss/_variables.scss";
-@import "componentes/scss/_variables-dark.scss";
-@import "componentes/scss/_maps.scss";
-@import "componentes/scss/_mixins.scss";
-@import "componentes/scss/_utilities.scss";
+@import "/componentes/scss/_functions.scss";
+@import "/componentes/scss/_variables.scss";
+@import "/componentes/scss/_variables-dark.scss";
+@import "/componentes/scss/_maps.scss";
+@import "/componentes/scss/_mixins.scss";
+@import "/componentes/scss/_utilities.scss";
 /*Configuraçoes*/
 
 
 
-@import "componentes/scss/_reboot.scss";
-@import "componentes/scss/_root.scss";
-@import "componentes/scss/_type.scss";
-@import "componentes/scss/_images.scss";
-@import "componentes/scss/_grid.scss";
-@import "componentes/scss/_tables.scss";
-@import "componentes/scss/_forms.scss";
-@import "componentes/scss/_buttons.scss";
-@import "componentes/scss/_transitions.scss";
-@import "componentes/scss/_button-group.scss";
-@import "componentes/scss/_nav.scss";
-@import "componentes/scss/_navbar.scss";
-@import "componentes/scss/_accordion.scss";
-@import "componentes/scss/_breadcrumb.scss";
-@import "componentes/scss/_pagination.scss";
-@import "componentes/scss/_badge.scss";
-@import "componentes/scss/_alert.scss";
-@import "componentes/scss/_progress.scss";
-@import "componentes/scss/_list-group.scss";
-@import "componentes/scss/_close.scss";
-@import "componentes/scss/_tooltip.scss";
-@import "componentes/scss/_popover.scss";
-@import "componentes/scss/_carousel.scss";
-@import "componentes/scss/_spinners.scss";
-@import "componentes/scss/_offcanvas.scss";
-@import "componentes/scss/_placeholders.scss";
-@import "componentes/scss/_containers.scss";
-@import "componentes/scss/_card.scss";
-@import "componentes/scss/_dropdown.scss";
-@import "componentes/scss/_modal.scss";
+@import "/componentes/scss/_reboot.scss";
+@import "/componentes/scss/_root.scss";
+@import "/componentes/scss/_type.scss";
+@import "/componentes/scss/_images.scss";
+@import "/componentes/scss/_grid.scss";
+@import "/componentes/scss/_tables.scss";
+@import "/componentes/scss/_forms.scss";
+@import "/componentes/scss/_buttons.scss";
+@import "/componentes/scss/_transitions.scss";
+@import "/componentes/scss/_button-group.scss";
+@import "/componentes/scss/_nav.scss";
+@import "/componentes/scss/_navbar.scss";
+@import "/componentes/scss/_accordion.scss";
+@import "/componentes/scss/_breadcrumb.scss";
+@import "/componentes/scss/_pagination.scss";
+@import "/componentes/scss/_badge.scss";
+@import "/componentes/scss/_alert.scss";
+@import "/componentes/scss/_progress.scss";
+@import "/componentes/scss/_list-group.scss";
+@import "/componentes/scss/_close.scss";
+@import "/componentes/scss/_tooltip.scss";
+@import "/componentes/scss/_popover.scss";
+@import "/componentes/scss/_carousel.scss";
+@import "/componentes/scss/_spinners.scss";
+@import "/componentes/scss/_offcanvas.scss";
+@import "/componentes/scss/_placeholders.scss";
+@import "/componentes/scss/_containers.scss";
+@import "/componentes/scss/_card.scss";
+@import "/componentes/scss/_dropdown.scss";
+@import "/componentes/scss/_modal.scss";
 /* Layout & components*/
 
-@import "componentes/scss/_helpers.scss";
-@import "componentes/scss/helpers/_position.scss";
+@import "/componentes/scss/_helpers.scss";
+@import "/componentes/scss/helpers/_position.scss";
 /*helpers*/
-@import "componentes/scss/utilities/_api.scss";
+@import "/componentes/scss/utilities/_api.scss";
 
 .dropdown-item:active{
     background-color: rgba(0, 0, 0, 0.76)!important;

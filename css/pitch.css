@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("componentes/font/Roboto-Regular.ttf");
+  src: url("/componentes/font/Roboto-Regular.ttf");
 }
 
 * {
@@ -69,7 +69,7 @@ body{
 
 main{
   transition: background-color 0.3s ease;
-  background: url('componentes/img/all/bg/imagem-fundo-branco.png');
+  background: url('/componentes/img/all/bg/imagem-fundo-branco.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,7 +78,7 @@ main{
 
 [data-bs-theme="dark"] main{
   transition: background-color 0.3s ease;
-  background: url('componentes/img/all/bg/imagem-fundo.png');
+  background: url('/componentes/img/all/bg/imagem-fundo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
