@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url(/componentes/font/Roboto-Regular.ttf);
+  src: url(/componentes/font/Roboto-Regular.ttf) format("ttf");
 }
 
 * {
