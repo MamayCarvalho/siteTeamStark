@@ -1,14 +1,10 @@
 @charset "utf-8";
-
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(.componentes/font/Roboto-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto', sans-serif;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -22,7 +18,7 @@ html {
   }
 
 header {
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   height: auto;
