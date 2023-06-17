@@ -70,7 +70,7 @@ body{
 }
 main{
   transition: background-color 0.3s ease;
-  background-image: url(/componentes/img/all/background/imagem-fundo-branco.jpg);
+  background-image: url('./componentes/img/all/background/imagem-fundo-branco.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,7 +78,7 @@ main{
 }
 
 [data-bs-theme="dark"] main{
-  background-image: url(./componentes/img/all/background/imagem-fundo.jpg);
+  background-image: url('.\componentes/img/all/background/imagem-fundo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
