@@ -1,7 +1,7 @@
 body{
 min-width: 100vw;
 min-height: 100vh;
-background: url(./componentes/img/imagem-fundo-branco.jpg);
+background: url(/componentes/img/imagem-fundo-branco.jpg);
 background-position: center;
 background-size: cover;
 }
