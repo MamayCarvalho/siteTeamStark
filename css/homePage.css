@@ -10,6 +10,10 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background: url('/componentes/img/imagem-fundo-branco.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -70,7 +74,7 @@ body{
 }
 main{
   transition: background-color 0.3s ease;
-  background-image: url('/componentes/img/imagem-fundo-branco.jpg');
+  background: url('/componentes/img/imagem-fundo-branco.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,7 +82,7 @@ main{
 }
 
 [data-bs-theme="dark"] main{
-  background-image: url(/componentes/img/imagem-fundo.jpg);
+  background: url(/componentes/img/imagem-fundo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
