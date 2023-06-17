@@ -64,8 +64,7 @@ body{
 }
 
 main{
-  transition: background-color 0.3s ease;
-  background: url('../componentes/img/backgroundLight.jpg');
+  background: url(../componentes/img/backgroundLight.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -73,7 +72,7 @@ main{
 }
 
 [data-bs-theme="dark"] main{
-  background: url('componentes/img/backgroundDark.jpg');
+  background: url(/componentes/img/backgroundDark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
