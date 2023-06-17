@@ -1,7 +1,16 @@
-body{
-min-width: 100vw;
-min-height: 100vh;
-background: url(/componentes/img/imagem-fundo-branco.jpg);
-background-position: center;
-background-size: cover;
-}
+main{
+    transition: background-color 0.3s ease;
+    background: url(../componentes/img/backgroundLight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  [data-bs-theme="dark"] main{
+    background: url(../componentes/img/backgroundDark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  

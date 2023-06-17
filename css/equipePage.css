@@ -64,7 +64,7 @@ body{
 
 main{
   transition: background-color 0.3s ease;
-  background: url('/componentes/img/imagem-fundo-branco.jpg');
+  background: url(../componentes/img/backgroundLight.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -72,12 +72,12 @@ main{
 }
 
 [data-bs-theme="dark"] main{
-  transition: background-color 0.3s ease;
-  background: url('/componentes/img/imagem-fundo-branco.jpg');
+  background: url(../componentes/img/backgroundDark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 [data-bs-theme="light"] footer {
   opacity: 1;
   background: rgb(230, 230, 230);
@@ -132,6 +132,15 @@ main{
 
 [data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover {
   background: #171717;
+}
+.dropdown-item:active{
+  background-color: rgba(0, 0, 0, 0.76)!important;
+  color: rgb(235, 235, 235)!important;
+}
+[data-bs-theme="dark"] .dropdown-item:active{
+  color: #000000!important;
+  background-color: rgba(238, 238, 238, 0.76)!important;
+  
 }
 
 #btnSwitch {
