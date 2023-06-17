@@ -10,10 +10,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url('/componentes/img/imagem-fundo-branco.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -82,7 +78,7 @@ main{
 }
 
 [data-bs-theme="dark"] main{
-  background: url(/componentes/img/imagem-fundo.jpg);
+  background: url('/componentes/img/imagem-fundo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

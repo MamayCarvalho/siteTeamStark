@@ -65,7 +65,7 @@ body{
 
 main{
   transition: background-color 0.3s ease;
-  background: url('\componentes/img/all/bg/imagem-fundo-branco.png');
+  background: url('/componentes/img/imagem-fundo-branco.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,7 +74,7 @@ main{
 
 [data-bs-theme="dark"] main{
   transition: background-color 0.3s ease;
-  background: url('\componentes/img/all/bg/imagem-fundo.png');
+  background: url('/componentes/img/imagem-fundo-branco.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
