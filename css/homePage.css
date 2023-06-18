@@ -8,30 +8,15 @@
   filter: brightness(0.6);
 }
 
-.carousel-indicators [data-bs-target] {
-  background-color: rgb(255, 255, 255);
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  box-shadow: inset 0px 0px 5px 0px #000000;
-  transition: opacity .3s ease;
-}
-[data-bs-theme="dark"] .carousel-indicators [data-bs-target] { 
-      background-color: rgb(0, 0, 0);
-      width: 10px;
-      height: 10px;
-      border-radius: 100%;
-      box-shadow: inset 0px 0px 5px 0px #ffffff;
 
-}
 .carousel-control-next-icon, .carousel-control-prev-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 3rem;
   background-repeat: no-repeat;
   background-position: 50%;
-  box-shadow: inset 0px 0px 5px 5px #000;
   border-radius: 100%;
+  
 }
 .carrossel{
   left: 0;
