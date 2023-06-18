@@ -10,6 +10,7 @@
   
   /* Estilos para cada seção */
   section {
+    text-align: start;
     flex: 1 1 500px;
     min-width: 300px;
     border-radius: 17px;

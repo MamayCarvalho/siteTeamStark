@@ -23,10 +23,6 @@
   width: 100vw;
 }
 
-[data-bs-theme="dark"] footer {
-  background: rgb(43, 48, 53);
-  color: #fff;
-}
 
 .blur-text {
   color: #000000;

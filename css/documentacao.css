@@ -3,13 +3,13 @@
 .documentacao{
   gap: 50px;
   flex: 1 1 500;
+  text-align: justify;
 }
 h1{
   padding-bottom: 10px;
 }
 
 p{
-    text-align: left;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
