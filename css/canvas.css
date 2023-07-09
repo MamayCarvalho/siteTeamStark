@@ -10,8 +10,8 @@
   
   /* Estilos para cada seção */
   section {
-    text-align: start;
-    flex: 1 1 500px;
+    text-align: left;
+    flex: 1 1 350px;
     min-width: 300px;
     border-radius: 17px;
     padding: 15px;
@@ -45,7 +45,7 @@
     font-weight: 600;
     border-bottom: 3px solid rgb(129, 129, 129);
     color: #000;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   [data-bs-theme="dark"] section div p {
    color: #ffffff;
