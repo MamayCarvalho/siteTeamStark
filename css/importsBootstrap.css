@@ -32,10 +32,16 @@ header {
 
 .itensDownload {
   border-radius: 17px;
-  padding: 10px;
+  margin-top: 10px;
   align-items: center;
+  justify-content: space-between !important;
 }
-
+.itensDownload a{
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: inherit;
+}
 #btn-top {
   position: fixed;
   bottom: 85px;
@@ -183,7 +189,6 @@ footer{
   cursor: pointer;
 }
 
-/* Hide default HTML checkbox */
 #btnSwitch {
   display: none;
   width: 0;
@@ -203,17 +208,14 @@ footer{
   
 }
 
-/* night sky background */
 #btnSwitch:checked + svg #container {
   fill: #2b4360;
 }
 
-/* move button to right when checked */
 #btnSwitch:checked + svg #button {
   transform: translate(28px, 2.333px);
 }
 
-/* show/hide sun and moon based on checkbox state */
 #sun {
   opacity: 1;
 }
@@ -230,7 +232,6 @@ footer{
   opacity: 1;
 }
 
-/* show or hide background items on checkbox state */
 #cloud {
   opacity: 1;
 }
